@@ -71,15 +71,18 @@ int main(int ac, char **argv)
                 /* check for the first input and if it is "exit", exit the shell */
                 if (strcmp(lineptr, "exit") == 0)
                 {
-                        myexit();
+                        myexit();  /* here am using(calling) my own function to exit the shell and you can build your own */
                 }
 
                 execmd(argv); /* here we are executing the commands */
 
                 /*free those guys*/
-                freetok(argv, ntok); /* freetok is function to free argv */
+                freetok(argv, ntok); /* here freetok, i am using(calling) my own function that free each token, you can buil Yours. */
                 free(line_cp);
         }
         free(lineptr);
         return (0);
 }
+
+/* DONT FORGET: DON'T COPY ANY CODES OR FILES IN HERE FOR YOUR OWN SAFETY, JUST SEE HOW IT WORKS(THIS IS WHY I WRITE A COMMENT ALL THE PLACE */
+/* DO HARD THINGS */
