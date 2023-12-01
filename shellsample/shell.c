@@ -3,7 +3,7 @@
 /**
  * main - simple shell.
  * @ac: argument count.
- * @argv: array of charachters
+ * @argv: array of strings.
  * Return: 0 @success.
  */
 int main(int ac, char **argv)
